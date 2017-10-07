@@ -1,0 +1,76 @@
+
+$theme: '.ace';
+@import "compass/css3";
+
+/* Overrides of the themed horizontal scroller to take it back to a basic black transparent OS X style overlay. */
+#{$theme}.sc-overlay-scroller-view.sc-horizontal {
+
+  
+  .track {
+    background: none;
+  }
+
+  .cap, .endcap {
+    background: none;
+  }
+
+  
+  .button-top {
+    background: none;
+  }
+
+  .button-bottom {
+    background: none;
+  }
+
+  .button-top:active {
+    background: none;
+  }
+
+  .button-bottom:active {
+    background: none;
+  }
+
+  
+  .thumb {
+  }
+
+  .thumb-top {
+    @include border-left-radius(4px);
+    background-color: $overlay-thumb-background-color;
+    background-image: none;
+    border-left: 1px solid $overlay-thumb-border-color;
+    border-top: 1px solid $overlay-thumb-border-color;
+    border-bottom: 1px solid $overlay-thumb-border-color;
+    height: 7px;
+    top: 2px;
+  }
+
+  .thumb-clip {
+    height: 9px; /* +2px for white border */
+    top: 2px;
+  }
+
+  .thumb-inner {
+  }
+
+  .thumb-center {
+    background-color: $overlay-thumb-background-color;
+    background-image: none;
+    border-top: 1px solid $overlay-thumb-border-color;
+    border-bottom: 1px solid $overlay-thumb-border-color;
+    width: initial;
+    height: 7px;
+  }
+
+  .thumb-bottom {
+    @include border-right-radius(4px);
+    background-color: $overlay-thumb-background-color;
+    background-image: none;
+    border-right: 1px solid $overlay-thumb-border-color;
+    border-top: 1px solid $overlay-thumb-border-color;
+    border-bottom: 1px solid $overlay-thumb-border-color;
+    height: 7px;
+  }
+
+}

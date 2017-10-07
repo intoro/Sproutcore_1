@@ -1,0 +1,89 @@
+
+$theme: '.ace';
+/* Track */
+#{$theme}.sc-scroller-view.sc-vertical {
+  .track {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_track_and_arrows_0_16__1__0;
+-chance-offset: "resources/scroller/vertical/track_and_arrows_0_16__1__0" 0 0;background-repeat: repeat-y;
+	  position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	width: 14px;
+  }
+
+  .cap {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_track_and_arrows_0_0__16__0;
+-chance-offset: "resources/scroller/vertical/track_and_arrows_0_0__16__0" 0 0;background-repeat: no-repeat;
+  	position: absolute;
+  	width: 14px;
+  	height: 16px;
+  	top: 0;
+  }
+
+  
+  .button-top, .button-left {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_track_and_arrows_0___26_15_0;
+-chance-offset: "resources/scroller/vertical/track_and_arrows_0___26_15_0" 0 0;background-repeat: no-repeat;
+	  position: absolute;
+  	height: 26px;
+    width: 14px;
+    bottom: 15px;
+  }
+
+  .button-right, .button-bottom {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_track_and_arrows_0___15_0_0;
+-chance-offset: "resources/scroller/vertical/track_and_arrows_0___15_0_0" 0 0;background-repeat: no-repeat;
+  	position: absolute;
+  	height: 15px;
+    width: 14px;
+    bottom: 0;
+  }
+
+  
+  .button-top:active, .button-left:active,
+  .button-top.active, .button-left.active {
+	  @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_track_and_arrows_active_0___26_15_0;
+-chance-offset: "resources/scroller/vertical/track_and_arrows_active_0___26_15_0" 0 0;background-repeat: no-repeat;
+  }
+
+  .button-right:active, .button-bottom:active,
+  .button-right.active, .button-bottom.active {
+  	@extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_track_and_arrows_active_0___15_0_0;
+-chance-offset: "resources/scroller/vertical/track_and_arrows_active_0___15_0_0" 0 0;background-repeat: no-repeat;
+  }
+
+  
+  .thumb {
+  	position: absolute;
+  }
+
+  .thumb-center {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_thumb_0_10__1__0;
+-chance-offset: "resources/scroller/vertical/thumb_0_10__1__0" 0 0;background-repeat: repeat-y;
+  	position: absolute;
+  	width: 14px;
+  	top: 10px;
+  	bottom: 8px; /* hack to account for a different cap length than is hard-coded in;
+  	we need a render delegate here pretty badly. */
+  }
+
+  .thumb-top, .thumb-left {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_thumb_0_0__10__0;
+-chance-offset: "resources/scroller/vertical/thumb_0_0__10__0" 0 0;background-repeat: no-repeat;
+  	position: absolute;
+  	width: 14px;
+  	top: 0;
+  	height: 10px;
+  }
+
+  .thumb-right, .thumb-bottom {
+    @extend .__chance_slice__sproutcore_ace_resources_scroller_vertical_thumb_0___10_0_0;
+-chance-offset: "resources/scroller/vertical/thumb_0___10_0_0" 0 0;background-repeat: no-repeat;
+  	position: absolute;
+  	width: 14px;
+  	bottom: -2px; /* hack to account for a different cap length than is hard-coded in;
+  	we need a render delegate here pretty badly. */
+  	height: 10px;
+  }
+}
